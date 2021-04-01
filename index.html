@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <title>Technical Documentation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>  
+<body>
+  <nav id="navbar">
+    <header>
+      <h1>CSS Documentation</h1>
+    </header>
+    <ul id="link-list">
+      <li><a href="#Selectors" class="nav-link">Selectors</a></li>
+      <li><a href="#Box_Model" class="nav-link">Box Model</a></li>
+      <li><a href="#Flexbox" class="nav-link">Flexbox</a></li>
+      <li><a href="#Grid" class="nav-link">Grid</a></li>
+      <li><a href="#Transform" class="nav-link">Transform</a></li>
+      <li><a href="#Transitions" class="nav-link">Transitions</a></li>
+      <li><a href="#References" class="nav-link">References</a></li>
+    </ul>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Selectors">
+      <header>Selectors</header>
+      <p>CSS selectors define the elements to which a set of CSS rules apply.</p>
+      
+      <h2>Basic Selectors</h2>
+      <ul>
+        <li>Universal Selector</li>
+        <li>Type Selector</li>
+        <li>Class Selector</li>
+        <li>ID Selector</li>
+        <li>Attribute Selector</li>
+      </ul>
+
+      <p>Example: <code>*</code> will match all the elements in the document.</p>
+    </section>
+    <section class="main-section" id="Box_Model">
+      <header>Box Model</header>
+      <p>Everything in CSS has a box around it, and understanding these boxes is key to being able to create layouts with CSS, or to align items with other items.</p>
+      <p>In CSS we broadly have two types of boxes — block boxes and inline boxes. These characteristics refer to how the box behaves in terms of page flow, and in relation to other boxes on the page. The type of box applied to an element is defined by the display property values such as <code>block</code> and <code>inline</code>, and relates to the outer value of display.</p>
+    </section>
+    <section class="main-section" id="Flexbox">
+      <header>Flexbox</header>
+      <p>Flexbox is the commonly-used name for the CSS Flexible Box Layout Module, a layout model for displaying items in a single dimension — as a row or as a column. The key feature of Flexbox is the fact that items in a flex layout can grow and shrink. Space can be assigned to the items themselves, or distributed between or around the items. Flexbox also enables alignment of items on the main or cross axis, thus providing a high level of control over the size and alignment of a group of items.</p>
+      <p><code>flex</code> is a new value added to the CSS display property. Along with <code>inline-flex</code> it causes the element that it applies to in order to become a flex container, and the element's children to each become a flex item. </p>
+    </section>
+    <section class="main-section" id="Grid">
+      <header>Grid</header>
+      <p>The grid CSS property is a shorthand property that sets all of the explicit and implicit grid properties in a single declaration.</p>
+      <p>Using grid you specify one axis using grid-template-rows or grid-template-columns, you then specify how content should auto-repeat in the other axis using the implicit grid properties: grid-auto-rows, grid-auto-columns, and grid-auto-flow.</p>
+    </section>
+    <section class="main-section" id="Transform">
+      <header>Transform</header>
+      <p>The transform CSS property lets you rotate, scale, skew, or translate an element. It modifies the coordinate space of the CSS visual formatting model.</p>
+      <p>If the property has a value different than none, a stacking context will be created. In that case, the element will act as a containing block for any position: <code>fixed;</code> or <code>position: absolute;</code> elements that it contains.</p>
+    </section>
+    <section class="main-section" id="Transitions">
+      <header>Transitions</header>
+      <p>The transition CSS property is a shorthand property for transition-property, transition-duration, transition-timing-function, and transition-delay.</p>
+      <p>Transitions enable you to define the transition between two states of an element. Different states may be defined using pseudo-classes like <code>:hover</code> or <code>:active</code> or dynamically set using JavaScript.</p>
+    </section>
+    <section class="main-section" id="References">
+      <header>References</header>
+      <p>All references can be found on <a href="https://developer.mozilla.org/en-US/">MDN</a> </p>
+    </section>
+    
+  </main>
+  
+  
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
+
+
+
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->

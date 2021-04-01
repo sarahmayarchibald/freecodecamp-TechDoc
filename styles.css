@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background: #ffcdb2;
+    color: #6d6875;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  code {
+    background: #e5989b;
+  }
+    
+  /* Navbar */
+  #navbar {
+    width: 30vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  #navbar h1 {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  #navbar #link-list {
+    padding: 1rem;
+  }
+
+  #navbar li {
+    list-style: none;
+    border-bottom: 1px dotted #333;
+    text-align: center;
+  }
+
+  #navbar li:hover {
+    background: #b5838d;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  #navbar a {
+    text-decoration: none;
+    color: #333;
+    padding: 2rem;
+    display: block;
+  }
+
+  #navbar a:hover {
+    color: #fff;
+  }
+  
+  /* Main section */
+  #main-doc {
+    width: 70vw;
+    padding: 1rem;
+  }
+
+  #main-doc .main-section {
+    margin-bottom: 3rem;
+  }
+
+  #main-doc .main-section header {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+
+  #main-doc .main-section p {
+    color: #333;
+    line-height: 2;
+  }
+
+  #main-doc .main-section h2 {
+    margin: 2rem 0;
+  }
+
+  #main-doc .main-section li {
+    list-style: none;
+    margin-bottom: 1rem;
+  }
+  
+  @media(max-width: 700px) {
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    #navbar {
+      width: 100%;
+      height: 200px;
+      overflow: scroll;
+      /* background: #fff; */
+      position: static;
+      top: 0;
+      left: 0;
+      border-bottom: 2px solid #6d6875;
+    }
+
+    #main-doc {
+      width: 100%;
+      padding: 1rem;
+    }
+  }
